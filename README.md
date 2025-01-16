@@ -94,9 +94,9 @@ Ejecuta el programa y cubre la siguiente tabla con los valores de cada variable 
 | Linea 13 |     |     |     |  
 
 
-#### Ejercicio 2 y Ejercicio 3
+#### Ejercicio 2
 
-Utiliza el debugging para corregir los códigos de `src/main_e2.py` y `src/main_e3.py`, busca los errores y corrígelos. Y responde a las siguientes preguntas:
+Utiliza el debugging para analizar el código de `src/main_e2.py`, busca los errores y corrígelos. Existen un total de 9 errores a solucionar. Además, responde a las siguientes preguntas:
 
 1. ¿Qué instrucciones estaban mal y por qué?
 
@@ -104,3 +104,9 @@ Utiliza el debugging para corregir los códigos de `src/main_e2.py` y `src/main_
 
 3. ¿Qué pasa con las variables del main cuando transicionamos hacia una función?
 
+
+Sube los cambios a tu repositorio, ya que revisaré si has solucionado los errores ;). Algunos comentarios:
+
+- No cambies el nombre de ninguna función ni sus parámetros de entrada
+- Gestiona la existencia de los productos en la lista correctamente devolviendo `None` si no existe.
+- Si un producto ya existe, no debería agregarse de nuevo.

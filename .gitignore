@@ -1,3 +1,4 @@
 images/test/__pycache__
 .pytest_cache
 src/__pycache__
+src/main_e2_test.py
