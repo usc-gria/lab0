@@ -39,8 +39,6 @@ agregar_producto("Monitor", 800, 2)
 agregar_producto("Laptop", 1200, 1)
 
 mostrar_inventario()
-total_inventario = calcular_total()
-print(f"Total calculado: {total_inventario}")
 
 producto1 = buscar_producto("Mouse")
 producto2 = buscar_producto("Audífonos")
@@ -51,6 +49,7 @@ aplicar_descuento("Mouse", 0.1)
 for producto in inventario:
     print(f"Stock del producto: {producto['stock']}")
 
+total_inventario = calcular_total()
 print(f"Total en inventario: {total}")
 
 for producto in inventario:

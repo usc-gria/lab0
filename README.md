@@ -1,9 +1,9 @@
 # LAB 0 - Introducción al entorno de desarrollo y debugging en Python.
 
 
-Ya hemos visto como poner a punto nuestro enterno de programación con GitHub Classroom, si aún tienes alguna duda recuerda que están todos los pasos en [este repositorio.](https://github.com/usc-gria/programacionII-instructions)
+Ya hemos visto como poner a punto nuestro entorno de programación con GitHub Classroom, si aún tienes alguna duda recuerda que están todos los pasos en [este repositorio.](https://github.com/usc-gria/programacionII-instructions)
 
-En este primer laboratorio (no, no hay que entregar nada antes de que lo preguntes, que suerte!) vamos a aprender a inspeccionar nuestro código haciendo debugging. Si le preguntamos a nuestro amigo ChatGPT nos dirá que `el debugging es el proceso de identificar, analizar y corregir errores o fallos en el código de un programa para que funcione correctamente y cumpla con los objetivos esperados.` Es decir, será una herramienta que nos permita identificar y corregir errores que tengamos en nuestro código. Es una herramienta muy útil que cualquier persona que tenga que trabajar con código usa diariamente. 
+En esta primera práctica vamos a aprender a inspeccionar nuestro código haciendo debugging. Si le preguntamos a nuestro amigo ChatGPT nos dirá que `el debugging es el proceso de identificar, analizar y corregir errores o fallos en el código de un programa para que funcione correctamente y cumpla con los objetivos esperados.` Es decir, será una herramienta que nos permita identificar y corregir errores que tengamos en nuestro código. Es una herramienta muy útil que cualquier persona que tenga que trabajar con código usa diariamente. 
 
 Las herramienta de IDE (Integrated Development Environment) disponen de funcionalidades específicas para ayuda a la depuración de programas. Dichas funcionalidades permiten realizar, entre otras, las siguientes tareas:
 - Ejecución paso a paso del programa
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
 ## Lanzar el modo debugging en VSCode
 
-Para acivar el modo depuración tenemos que hacer click arriba a la derecha en la flecha hacia abajo al lado del símbolo de ejecución (►) y seleccionar donde pone `Depurador de Python: Depurar archivo de Python`. Ten en cuenta en Visual Studio Code esta acción quedará guardada por defecto para la siguiente ejecución, fíjate que ahora en vez del símbolo de ejecutar (►) aparece el mismo pero con una especie de escarabajo (🐞▶️), el escarabajo significa bug o error en el código. Si quieres cambiar a una ejecución normal deberás hacer click en el menú desplegable de antes y seleccionar `Ejecutar archivo de Python`. 
+Para acivar el modo depuración tenemos que hacer click arriba a la derecha en la flecha hacia abajo al lado del símbolo de ejecución (►) y seleccionar donde pone `Depurador de Python: Depurar archivo de Python`. Ten en cuenta que en Visual Studio Code esta acción quedará guardada por defecto para la siguiente ejecución, fíjate que ahora en vez del símbolo de ejecutar (►) aparece el mismo pero con una especie de escarabajo (🐞▶️). El escarabajo es el símbolo por defecto para representar bug o error en el código. Si quieres cambiar a una ejecución normal deberás hacer click en el menú desplegable de antes y seleccionar `Ejecutar archivo de Python`. 
 
 <p align="center">
   <img src="./images/debugging.png" />
@@ -39,12 +39,11 @@ Para acivar el modo depuración tenemos que hacer click arriba a la derecha en l
 
 ## Breakpoints: parando nuestro código
 
-Si lazamos este proceso, veremos que no pasa absolutamente nada y el programa se ejecutar de forma normal. Como queremos debuggear (inspeccionar) nuestro código, tenemos que indicar en el IDE dónde queremos que se pare esta ejecución. Para ello, vamos a utilizar los `breakpoints` o `puntos de interrupción`. Para marcar un punto de parada acercamos nuestro ratón a la parte izquierda del editor de código y veremos que aparece un punto rojo (🔴)
+Si lazamos este proceso, veremos que no pasa absolutamente nada y el programa se ejecutar de forma normal. Como queremos debuggear (inspeccionar) nuestro código, tenemos que indicar en el IDE dónde queremos que se pare esta ejecución. Para ello, vamos a utilizar los `breakpoints` o `puntos de interrupción`. Para marcar un punto de parada acercamos nuestro ratón a la parte izquierda del editor de código, justo antes de el número de línea, y veremos que aparece un punto rojo (🔴)
 
 <p align="center">
   <img src="./images/breakpoint.png" />
 </p>
-
 
 Vamos a fijar un punto de interrupción en la primera tarea de nuestro código (línea 4) y ejecutamos de nuevo el proceso de debugging. Nos saldrá una ventana como la que se muestra a continuación.
 
@@ -81,6 +80,7 @@ La herramienta de visualización de variables de VS Code se encuentra en la part
 
 
 #### Ejercicio 1.2
+-------------------
 Ejecuta el programa y cubre la siguiente tabla con los valores de cada variable antes de la ejecución de la línea correspondinte. 
 
 | Linea    | a   | b   | c   |    
